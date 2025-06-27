@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { MovieCard } from "./movie-card/movie-card";
 
 
 
@@ -9,7 +10,7 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, RouterLink],
+  imports: [CommonModule, RouterOutlet, RouterLink, MovieCard],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
